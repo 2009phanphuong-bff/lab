@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMax - Thế Giới Điện Ảnh</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <nav class="navbar">
+        <div class="logo">CINEMAX</div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-item">Trang chủ</a></li>
+            <li><a href="#movies" class="nav-item">Phim Hot</a></li>
+            <li><a href="#services" class="nav-item">Dịch vụ</a></li>
+            <li><a href="#contact" class="nav-item">Liên hệ</a></li>
+        </ul>
+        <button id="theme-toggle">🌙</button>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="fade-in-text">KHÁM PHÁ THẾ GIỚI ĐIỆN ẢNH</h1>
+            <p class="fade-in-text">Hàng ngàn bộ phim bom tấn đang chờ đợi bạn.</p>
+            <button class="cta-btn shake-animation">XEM NGAY</button>
+        </div>
+        <div class="marquee-container">
+            <div class="marquee-text">
+                🔥 Ưu đãi thành viên mới: Giảm 50% gói xem phim 4K - Ra mắt phim hành động mới nhất vào thứ Sáu này! 🔥
+            </div>
+        </div>
+    </header>
+
+    <section id="movies" class="section">
+        <h2 class="reveal">Phim Nổi Bật</h2>
+        <div class="movie-grid">
+            <div class="movie-card reveal">
+                <div class="card-img">
+                    <img src="assets/images/photo-1485846234645-a62644f84728.jpg" alt="Phim 1">
+                </div>
+                <div class="card-info">
+                    <h3>Hành Tinh Xanh</h3>
+                    <p>Khoa học viễn tưởng</p>
+                </div>
+            </div>
+            <div class="movie-card reveal">
+                <div class="card-img">
+                    <img src="assets/images/photo-1536440136628-849c177e76a1.jpg" alt="Phim 2">
+                </div>
+                <div class="card-info">
+                    <h3>Bí Ẩn Đêm Khuya</h3>
+                    <p>Kinh dị / Giật gân</p>
+                </div>
+            </div>
+            <div class="movie-card reveal">
+                <div class="card-img">
+                    <img src="assets/images/photo-1626814026160-2237a95fc5a0.jpg" alt="Phim 3">
+                </div>
+                <div class="card-info">
+                    <h3>Cuộc Đua Cuối</h3>
+                    <p>Hành động</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section reveal">
+        <h2 class="section-title">Dịch Vụ VIP Gold Class</h2>
+        <div class="services-container">
+            <div class="service-detail">
+                <div class="service-image">
+                    <img src="assets/images/images.jpg" alt="VIP Cinema">
+                </div>
+                <div class="service-info">
+                    <h3>Trải Nghiệm Điện Ảnh Thượng Lưu</h3>
+                    <p>Nâng tầm buổi xem phim của bạn với tiêu chuẩn 5 sao chỉ có tại CineMax.</p>
+                    <ul class="service-features">
+                        <li>🛋️ <strong>Ghế Sofa Da Cao Cấp:</strong> Có thể ngả 180 độ tùy chỉnh bằng điện.</li>
+                        <li>🍿 <strong>Ẩm Thực Tại Chỗ:</strong> Phục vụ bỏng ngô và đồ uống cao cấp tận ghế.</li>
+                        <li>🔊 <strong>Công Nghệ Âm Thanh:</strong> Hệ thống Dolby Atmos 360 độ chân thực nhất.</li>
+                        <li>🍷 <strong>Phòng Chờ Riêng:</strong> Không gian sang trọng trước khi vào phòng chiếu.</li>
+                    </ul>
+                    <button class="cta-btn">ĐẶT VÉ VIP NGAY</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+        <div class="contact-container">
+            <h2>Liên hệ với chúng tôi</h2>
+            <form action="send_email.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập tên của bạn..." required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Ví dụ: email@gmail.com" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="subject">Tiêu đề:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Bạn cần hỗ trợ về việc gì?">
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Viết tin nhắn của bạn ở đây..." required></textarea>
+                </div>
+        
+                <button type="submit" class="submit-btn">GỬI TIN NHẮN</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
